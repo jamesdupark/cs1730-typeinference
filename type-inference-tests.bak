@@ -15,17 +15,7 @@
   (test-equal? "Works with Num primitive"
                (type-infer `2) (t-num))
   (test-raises-error? "Unbound identifier"
-                      (type-infer `x))
-
-
-  ; polymorphism
-  ; identity function
-  ; typecheck fails for unsupported inference
-
-
-
-
-  )
+                      (type-infer `x)))
 
 ;; DO NOT EDIT BELOW THIS LINE =================================================
 
